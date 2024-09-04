@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Het maken van een professionele portfolio website. 
+  Pinterest namaken
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Pinterest startpagina 
+  <img src="Pinterest_Startpagina.png" width="375px" alt="Startpagina van de website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  pinterest detailpagina
+  <img src="Pinterest_Detailpagina.png" width="375px" alt="Detailpagina van bepaalde pins">
  
 </details>
 
