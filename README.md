@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Pinterest namaken
+  Top of the Morning Coffee namaken.
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Pinterest startpagina 
-  <img src="Pinterest_Startpagina.png" width="375px" alt="Startpagina van de website">
+  Top of the mornin' startpagina 
+  <img src="TOTM_homepagina.png" width="375px" alt="Startpagina van de website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  pinterest detailpagina
-  <img src="Pinterest_Detailpagina.png" width="375px" alt="Detailpagina van bepaalde pins">
+  Top of the mornin' detailpagina
+  <img src="TOTM_detailpagina.png" width="375px" alt="Detailpagina van bepaalde pins">
  
 </details>
 
@@ -56,8 +56,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  TOEGANGELIJKHEID
+  Tijdens de toegankelijkheid test met de screenreader kwamen de volgende bevindingen naar boven:
+  - Er is geen functie om naar de maincontent te skippen, deze wordt wel aangeboden door de ingebouwde screenreader narrarator van windows, maar deze werkt niet.
+  - Als je navigeert met het toetsenbord werkt is de volgorde onlogisch en incorrect waardoor het gebruik met enkel een toetsenbord heel moeilijk, al wel bijna onmogelijk is.
+  - Er is op veel knoppen geen focus style, dus het is erg moeilijk te zien welke knop je op het moment geselecteerd hebt met TAB
+   
+  WCAG CHECKLIST
+  Uit de checklist kwam naar voren dat de website op bepaalde vlakken wel verbeterd kan worden.
+  - De HTML heeft enorm veel errors, deze zouden enorm verminderd kunnen worden of geheel weg gehaald kunnen worden.
+  - language atribute toevoegen, deze is in de echte site afwezig.
+  - viewport zoom is disabled en niet aanwezig
+  - focus style is niet aanwezig
+  - keyboard focus volgt niet de volgorde op de visuele layout
+  - er wordt een heading level geskipt, namelijk H2
+  - niet alle images hebben een alt atribute
+  - skiplink is afwezig.
 
+  Dit zijn allemaal punten die bij het namaken van de site in gedachten worden genomen om deze problemen te verbeteren. 
 </details>
 
 
