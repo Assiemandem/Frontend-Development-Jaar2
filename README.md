@@ -83,15 +83,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
+  ### de hele homepagina: 
   <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   Bij deze breakdownschets heb ik niet elk element los benoemd omdat dat er erg veel zijn en het dan erg onoverzichtelijk zou worden. Ik heb zoveel mogelijk elementen benoemd, en op het moment dat deze vaker terug kwam deze dan niet meer benoemd omdat het mij enorm overbodig leek.
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### Pagina 2, detailscherm: 
+  <img src="readme-images/detailscherm_breakdownschets.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-
+  Hier heb ik wederom dezelfde strategie toegepast als bij de eerste breakdownschets. algemene outlining door gedeeltes af te boxen met sections. Binnen die section heb ik zoveel mogelijk elementen benoemd waarva ik zeker ben dat ik ze ga gebruiken. tijdens het coderen kom ik er misschien achter dat ik de basis van de website anders moet opstellen dus vandaar.
 </details>
 
 
