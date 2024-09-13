@@ -27,5 +27,20 @@
 /* JOUW STYLING */
 /****************/
 
+header{
+	background-color: #ffac00;
+	
+}
+
+h1{
+	font-family: "freight-sans-pro", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+
+	color: white;
+	font-size: 3em;;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;	
+}
 /* jouw code */
 
