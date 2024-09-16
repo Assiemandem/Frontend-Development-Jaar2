@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -15,11 +17,9 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
-
-
 
 
 
@@ -27,20 +27,195 @@
 /* JOUW STYLING */
 /****************/
 
-header{
-	background-color: #ffac00;
+@font-face {
+	font-family: Standaardfont;
+	src: url("fonts/FiraSansExtraCondensed-Black.ttf") format("truetype");
+}
+
+h1 {
+	font-family: Standaardfont;
+}
+
+
+body {
+	margin: 0;
+}
+
+
+
+/* DE HEADER */
+header {
+	min-height: 4em;
+	background-image: var(--header-gradient);
+	line-height: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	background-color: orange;
+	justify-content: space-between;
+	padding-right: 0.3em;
+}
+
+
+header button {
+	padding: .5em;
+
+
+	display: flex;
+	align-items: center;
+	gap: .25em;
+
+
+	appearance: none;
+	background-color: var(--button-background);
+	border: none;
+	border-radius: .25em;
+	font: inherit;
+	text-align: center;
+	color: var(--button-color);
+}
+
+header>button {
+
+	order: -1;
+}
+
+
+header>a:first-of-type {
+	display: grid;
+	grid-template-columns: min-content min-content;
+	grid-gap: .25em;
+	align-items: center;
+	font-weight: bold;
+}
+
+header>a:first-of-type img {
+	height: 3em;
+}
+
+header>a:last-of-type img {
+	height: 2em;
+}
+
+
+
+/* UITKLAP MENU*/
+nav {
+	padding: 1em;
+	display: grid;
+	align-content: start;
+	gap: 1em;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	translate: -100% 0%; 
+	transition: translate 0.3s;
+	background-color: orange;
+	
 	
 }
 
-h1{
-	font-family: "freight-sans-pro", sans-serif;
-	font-weight: 900;
-	font-style: normal;
-
-	color: white;
-	font-size: 3em;;
-	-webkit-text-stroke-width: 1px;
-  	-webkit-text-stroke-color: black;	
+nav.toonMenu {
+	translate: 0% 0%;
 }
-/* jouw code */
+
+
+
+
+nav ul {
+	margin: 0;
+	padding: 0em;
+	list-style: none;
+	font-size: 2em;
+	
+}
+
+nav a {
+	display: flex;
+	align-items: center;
+	column-gap: .25em;
+	border-bottom: solid 1px var(--menu-border);
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	text-decoration: 0;
+	padding: 10px;
+}
+
+nav ul li:first-of-type{
+	border-top: solid 1px black;	
+}
+
+nav ul li:last-of-type{
+	border-bottom: solid 1px black;	
+}
+
+nav a img {
+	width: auto;
+	height: 2em;
+}
+
+nav a.active {
+	font-weight: bold;
+}
+
+
+
+
+
+
+@media (min-width:38em) {
+	
+	
+	header>button {
+		/* JOUW CODE HIER - stap 6 */
+		display: none;
+	}
+
+	nav {
+		/* JOUW CODE HIER - stap 7 */
+		position: static;
+		translate: unset;
+		padding: 0;
+
+		background: none;
+	}
+
+	nav button {
+		/* JOUW CODE HIER - stap 6 */
+		display: none;
+	}
+
+	nav ul {
+		/* JOUW CODE HIER - stap 8 */
+		display: flex;
+		gap: 1em;
+		font-size: 1em;
+	}
+
+	nav a {
+		/* JOUW CODE HIER - stap 9 */
+		flex-direction: column;
+
+		border: none;
+	}
+
+	header>a:last-of-type {
+		/* JOUW CODE HIER - stap 9 */
+		flex-direction: column;
+	}
+}
+
+
+
+
+section:first-of-type {
+	background: url(homepage_achtergrond.png) center;	
+	background-size: 300%;
+	height: 30vh;
+}
+
 
