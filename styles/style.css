@@ -29,7 +29,7 @@
 
 @font-face {
 	font-family: Standaardfont;
-	src: url("fonts/FiraSansExtraCondensed-Black.ttf") format("truetype");
+	src: url("/fonts/FiraSansExtraCondensed-Black.ttf") format("truetype");
 }
 
 h1 {
