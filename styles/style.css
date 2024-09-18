@@ -28,13 +28,66 @@
 /****************/
 
 @font-face {
-	font-family: Standaardfont;
+	font-family: Titel;
 	src: url("/fonts/FiraSansExtraCondensed-Black.ttf") format("truetype");
 }
 
-h1 {
-	font-family: Standaardfont;
+@font-face {
+	font-family: Tekst;
+	src: url("/fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
 }
+
+h1 {
+	font-family: Titel;
+	text-transform: uppercase;
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	text-shadow: #2c2a29 0 7px 0px;
+	-webkit-text-stroke: 2px #2c2a29;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+h2{
+	font-family: Titel;
+	text-transform: uppercase;
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	text-shadow: #2c2a29 0 7px 0px;
+	-webkit-text-stroke: 2px #2c2a29;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+
+h3{
+	font-family: Titel;
+	text-transform: uppercase;
+	font-size: 2em;
+	text-align: center;
+	color: #2c2a29;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+
+p{
+	font-family: Tekst;
+	font-weight: 600;
+}
+
+section:first-of-type p{
+	font-size: 1em;
+	text-align: center;
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-top: -2em;
+	font-weight: 800;
+	color:#2c2a29;
+}
+
 
 
 body {
@@ -62,7 +115,7 @@ header {
 header button {
 	padding: .5em;
 
-
+	
 	display: flex;
 	align-items: center;
 	gap: .25em;
@@ -77,10 +130,12 @@ header button {
 	color: var(--button-color);
 }
 
-header>button {
 
+header>button {
+	
 	order: -1;
 }
+
 
 
 header>a:first-of-type {
@@ -143,6 +198,8 @@ nav a {
 	border-bottom: solid 1px black;
 	text-decoration: 0;
 	padding: 10px;
+	font-family: Titel;
+	text-transform: uppercase;
 }
 
 nav ul li:first-of-type{
@@ -153,16 +210,77 @@ nav ul li:last-of-type{
 	border-bottom: solid 1px black;	
 }
 
-nav a img {
-	width: auto;
-	height: 2em;
-}
+
 
 nav a.active {
 	font-weight: bold;
 }
 
 
+section:first-of-type {
+	background: url(/images/homepage_achtergrond.png) center;	
+	background-size: 800%;
+	height: auto;
+	background-repeat: no-repeat;
+	background: cover;
+	background-position: 60%;
+	padding-top: 2em;
+}
+
+
+section:first-of-type img {
+	width: 50%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+	padding-bottom: 2em;
+}
+
+
+section:first-of-type a {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	background-color: #e93ab8;
+	color: #2c2a29;
+	text-decoration: none;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-family: Titel;
+	font-size: 1.5em;
+	border: 2px solid #2c2a29;
+	
+}
+
+
+main ul:first-of-type{
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  	align-content: space-evenly;
+	justify-items: center;
+	margin-right: 1.4em;
+}
+  	
+
+main ul:first-of-type li{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+
+}
+
+main ul:first-of-type li p{
+	text-align: center;
+}
+
+main ul li img:first-of-type{
+	width: auto;
+}
 
 
 
@@ -171,51 +289,32 @@ nav a.active {
 	
 	
 	header>button {
-		/* JOUW CODE HIER - stap 6 */
 		display: none;
 	}
 
 	nav {
-		/* JOUW CODE HIER - stap 7 */
 		position: static;
 		translate: unset;
 		padding: 0;
-
 		background: none;
 	}
 
 	nav button {
-		/* JOUW CODE HIER - stap 6 */
 		display: none;
 	}
 
 	nav ul {
-		/* JOUW CODE HIER - stap 8 */
 		display: flex;
 		gap: 1em;
 		font-size: 1em;
 	}
 
 	nav a {
-		/* JOUW CODE HIER - stap 9 */
 		flex-direction: column;
-
 		border: none;
 	}
 
 	header>a:last-of-type {
-		/* JOUW CODE HIER - stap 9 */
 		flex-direction: column;
 	}
 }
-
-
-
-
-section:first-of-type {
-	background: url(homepage_achtergrond.png) center;	
-	background-size: 300%;
-	height: 30vh;
-}
-
-
