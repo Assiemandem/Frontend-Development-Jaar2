@@ -256,6 +256,24 @@ section:first-of-type a {
 	
 }
 
+section:nth-of-type(2) a {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	background-color: #ffac00;
+	color: #2c2a29;
+	text-decoration: none;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-family: Titel;
+	font-size: 1.5em;
+	border: 2px solid #2c2a29;
+	
+}
+
 
 main ul:first-of-type{
 	list-style: none;
@@ -264,6 +282,7 @@ main ul:first-of-type{
   	align-content: space-evenly;
 	justify-items: center;
 	margin-right: 1.4em;
+	padding-bottom: 2.5em;
 }
   	
 
@@ -282,7 +301,11 @@ main ul li img:first-of-type{
 	width: auto;
 }
 
-
+section:nth-of-type(2) p{
+	text-align: center;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
 
 
 @media (min-width:38em) {
