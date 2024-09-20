@@ -468,7 +468,7 @@ main section:nth-of-type(3){
 	padding-bottom: 2em;
 	position: absolute;
 	top: 312em;
-	--mask:
+	--mask: /* https://css-generators.com/wavy-shapes/ */
 	  radial-gradient(1.84em at 50% 2.55em,#000 99%,#0000 101%) calc(50% - 2em) 0/4em 51% repeat-x,
 	  radial-gradient(1.84em at 50% -1.55em,#0000 99%,#000 101%) 50% 1em/4em calc(51% - 1em) repeat-x,
 	  radial-gradient(1.84em at 50% calc(100% - 2.55em),#000 99%,#0000 101%) calc(50% - 2em) 100%/4em 51% repeat-x,
@@ -581,7 +581,7 @@ main section:nth-of-type(5){
 	top: 393em;
 	padding-bottom: 2em;
 
-	--mask:
+	--mask:   /* https://css-generators.com/wavy-shapes/ */
 	  radial-gradient(1.84em at 50% 2.55em,#000 99%,#0000 101%) calc(50% - 2em) 0/4em 51% repeat-x,
 	  radial-gradient(1.84em at 50% -1.55em,#0000 99%,#000 101%) 50% 1em/4em calc(51% - 1em) repeat-x,
 	  radial-gradient(1.84em at 50% calc(100% - 2.55em),#000 99%,#0000 101%) calc(50% - 2em) 100%/4em 51% repeat-x,
