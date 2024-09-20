@@ -37,6 +37,15 @@
 	src: url("/fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
 }
 
+
+body {
+	margin: 0;
+}
+
+
+
+/*KOPJES EN PARAGRAAF OPMAAK*/
+
 h1 {
 	font-family: Titel;
 	text-transform: uppercase;
@@ -70,15 +79,27 @@ h3{
 	color: #2c2a29;
 	margin-left: .5em;
 	margin-right: .5em;
+	margin-bottom: 10px;
+	
 }
 
-
+h4{
+	font-family: Tekst;
+	color: #2c2a29;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 1.3em;
+	font-weight: 700;
+	margin-top: 0;
+}
 p{
 	font-family: Tekst;
 	font-weight: 600;
+	color: #2c2a29;
 }
 
-section:first-of-type p{
+
+section p{
 	font-size: 1em;
 	text-align: center;
 	margin-left: 5em;
@@ -89,10 +110,15 @@ section:first-of-type p{
 }
 
 
-
-body {
-	margin: 0;
+section ul li p{
+	font-family: Tekst;
+	font-weight: 600;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: left;
 }
+
+
 
 
 
@@ -109,25 +135,16 @@ header {
 	background-color: orange;
 	justify-content: space-between;
 	padding-right: 0.3em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 
 header button {
-	padding: .5em;
-
-	
 	display: flex;
 	align-items: center;
-	gap: .25em;
-
-
-	appearance: none;
 	background-color: var(--button-background);
 	border: none;
-	border-radius: .25em;
-	font: inherit;
-	text-align: center;
-	color: var(--button-color);
 }
 
 
@@ -152,7 +169,8 @@ header>a:first-of-type img {
 }
 
 header>a:last-of-type img {
-	height: 3em;
+	height: 2em;
+
 }
 
 
@@ -218,6 +236,7 @@ nav a.active {
 }
 
 
+
 section:first-of-type {
 	background: url(/images/homepage_achtergrond.png) center;	
 	background-size: 800%;
@@ -234,82 +253,380 @@ section:first-of-type img {
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
-  	width: 50%;
 	padding-bottom: 2em;
 }
 
+/* VANAF HIER DE CLASSES VERANDEREN NAAR PSEUDO SELECTORS*/
 
-section:first-of-type a {
+
+/*KNOPPEN*/
+.knop {
 	display: block;
 	margin: 0 auto;
-	width: 50%;
+	width: 38%;
 	text-align: center;
 	background-color: #e93ab8;
 	color: #2c2a29;
 	text-decoration: none;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
 	margin-top: 2em;
 	margin-bottom: 2em;
 	font-family: Titel;
-	font-size: 1.5em;
+	font-size: 1.7em;
+	text-transform: uppercase;
 	border: 2px solid #2c2a29;
-	
+	box-shadow:  0px 3px 0px -2px #2c2a29, 
+				 0px 6px 0px -4px #2c2a29, 
+				 0px 9px 0px -6px #2c2a29, 
+				 0px 12px 0px -8px #2c2a29, 
+				 0px 15px 0px -10px #2c2a29, 
+				 0px 18px 0px -12px #2c2a29, 
+				 0px 21px 0px -14px #2c2a29, 
+				 0px 24px 0px -16px #2c2a29, 
+				 0px 27px 0px -18px #2c2a29,
+				 0px 30px 0px -20px #2c2a29,
+				 0px 33px 0px -22px #2c2a29,
+				 0px 36px 0px -24px #2c2a29,
+				 0px 39px 0px -26px #2c2a29,
+				 0px 42px 0px -28px #2c2a29;
+	;
 }
 
-section:nth-of-type(2) a {
+.knop2 {
 	display: block;
 	margin: 0 auto;
-	width: 50%;
+	width: 38%;
 	text-align: center;
 	background-color: #ffac00;
 	color: #2c2a29;
 	text-decoration: none;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
 	margin-top: 2em;
 	margin-bottom: 2em;
 	font-family: Titel;
-	font-size: 1.5em;
+	font-size: 1.7em;
+	text-transform: uppercase;
 	border: 2px solid #2c2a29;
+	box-shadow:  0px 3px 0px -2px #2c2a29, 
+				 0px 6px 0px -4px #2c2a29, 
+				 0px 9px 0px -6px #2c2a29, 
+				 0px 12px 0px -8px #2c2a29, 
+				 0px 15px 0px -10px #2c2a29, 
+				 0px 18px 0px -12px #2c2a29, 
+				 0px 21px 0px -14px #2c2a29, 
+				 0px 24px 0px -16px #2c2a29, 
+				 0px 27px 0px -18px #2c2a29,
+				 0px 30px 0px -20px #2c2a29,
+				 0px 33px 0px -22px #2c2a29,
+				 0px 36px 0px -24px #2c2a29,
+				 0px 39px 0px -26px #2c2a29,
+				 0px 42px 0px -28px #2c2a29;
 	
 }
 
 
-main ul:first-of-type{
+
+
+/*doelen list*/
+.test{
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
   	align-content: space-evenly;
-	justify-items: center;
-	margin-right: 1.4em;
+	padding: 0;
 	padding-bottom: 2.5em;
+
 }
   	
-
-main ul:first-of-type li{
+.test li{
 	display: flex;
 	flex-direction: column;
-	width: 60%;
-
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-main ul:first-of-type li p{
+.test li p{
 	text-align: center;
 }
 
-main ul li img:first-of-type{
-	width: auto;
-}
 
-section:nth-of-type(2) p{
+/*shop list*/
+.shop{
+	display: grid;
+  	align-content: center;
+	padding: 0;
+	list-style: none;
+}
+.platteknop{
+	display: block;
+	margin: 0 auto;
+	width: 70%;
 	text-align: center;
-	margin-left: 1.5em;
-	margin-right: 1.5em;
+	background-color: #e93ab8;
+	color: #2c2a29;
+	text-decoration: none;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	margin-top: 10px;
+	margin-bottom: 2em;
+	font-family: Titel;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	border: 2px solid #2c2a29;
+}
+.shop li{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 8em;
+}
+.product{
+	display:flex;
+	justify-content: center;
+	position: relative;
+	border-radius: 20px;
+	border: 5px solid #2c2a29;
+	box-shadow: 0px 8px #2c2a29;
+	margin-bottom: 2em;
+	overflow: hidden;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
-@media (min-width:38em) {
+.plaatjejeweet{
+	width: 190%;
+}
+
+/*OPMAAK BONEN*/
+.bonen{
+	position: absolute;
+	display: flex;
+	left: 12px;
+	top: 12px;
+}
+
+.bonen img{
+	width: 10%;
+}
+
+/*OPMAAK NEW LABEL*/
+.new{
+	position: absolute;
+	background-color: rgb(255, 238, 5);
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 2px solid #2c2a29;
+	border-radius: 15px;
+	text-transform: uppercase;
+	font-weight: 800;
+	right: -30px;
+	top: 12px;
+}
+
+select{
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	height: 4em;
+	font-family: Tekst;
+	font-weight: 700;
+	font-size: 1em;
+	padding: 1em;
+	margin-bottom: 0;
+
+}
+
+
+
+
+
+/*SECTIE 2 OPMAAK*/
+main section:nth-of-type(2){
+padding-bottom: 10em;
+}
+
+section:nth-of-type(2) h3{
+	font-weight: 600;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: left;
+	
+}
+
+
+
+
+
+/*SECTIE 3 OPMAAK*/
+main section:nth-of-type(3){
+	background-color: #0fa954;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-bottom: 2em;
+	position: absolute;
+	top: 312em;
+	--mask:
+	  radial-gradient(1.84em at 50% 2.55em,#000 99%,#0000 101%) calc(50% - 2em) 0/4em 51% repeat-x,
+	  radial-gradient(1.84em at 50% -1.55em,#0000 99%,#000 101%) 50% 1em/4em calc(51% - 1em) repeat-x,
+	  radial-gradient(1.84em at 50% calc(100% - 2.55em),#000 99%,#0000 101%) calc(50% - 2em) 100%/4em 51% repeat-x,
+	  radial-gradient(1.84em at 50% calc(100% + 1.55em),#0000 99%,#000 101%) 50% calc(100% - 1em)/4em calc(51% - 1em) repeat-x;
+	-webkit-mask: var(--mask);
+			mask: var(--mask);
+
+	box-shadow:  0px 3px 0px -2px #2c2a29, 
+	0px 6px 0px -4px #2c2a29, 
+	0px 9px 0px -6px #2c2a29, 
+	0px 12px 0px -8px #2c2a29, 
+	0px 15px 0px -10px #2c2a29, 
+	0px 18px 0px -12px #2c2a29, 
+	0px 21px 0px -14px #2c2a29, 
+	0px 24px 0px -16px #2c2a29, 
+	0px 27px 0px -18px #2c2a29,
+	0px 30px 0px -20px #2c2a29,
+	0px 33px 0px -22px #2c2a29,
+	0px 36px 0px -24px #2c2a29,
+	0px 39px 0px -26px #2c2a29,
+	0px 42px 0px -28px #2c2a29;
+}
+
+
+main section:nth-of-type(3) h3{
+	font-weight: 600;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: left;
+	padding-bottom: 1em;
+	font-size: 3em;
+}
+
+main section:nth-of-type(3) p{
+	font-weight: 700;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: left;
+}
+
+main section:nth-of-type(3) a{
+	display: block;
+	margin-left: 40px;
+	width: 45%;
+	text-align: center;
+	background-color: #ffac00;
+	color: #2c2a29;
+	text-decoration: none;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: Titel;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	border: 2px solid #2c2a29;
+}
+
+
+
+/*SECTIE 4 OPMAAK*/
+section:nth-of-type(4){
+	background-color: #0076d5;
+	padding-bottom: 10em;
+}
+
+section:nth-of-type(4) img{
+	width: 90%;
+	margin-top: 8em;
+	margin-left: 2em;
+}
+
+section:nth-of-type(4) h2{
+	font-size: 5em;
+	line-height: 0.75em;
+}
+
+section:nth-of-type(4) p{
+	font-weight: 700;
+}
+
+section:nth-of-type(4) a{
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	text-align: center;
+	background-color: #ffac00;
+	color: #2c2a29;
+	text-decoration: none;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	margin-top: 10px;
+	margin-bottom: 2em;
+	font-family: Titel;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	border: 2px solid #2c2a29;
+}
+
+
+
+
+
+/*SECTIE 5 OPMAAK*/
+main section:nth-of-type(5){
+	background-color: #e93ab8;
+	margin-left: 40px;
+	margin-right: 40px;
+	position: absolute;
+	top: 393em;
+	padding-bottom: 2em;
+
+	--mask:
+	  radial-gradient(1.84em at 50% 2.55em,#000 99%,#0000 101%) calc(50% - 2em) 0/4em 51% repeat-x,
+	  radial-gradient(1.84em at 50% -1.55em,#0000 99%,#000 101%) 50% 1em/4em calc(51% - 1em) repeat-x,
+	  radial-gradient(1.84em at 50% calc(100% - 2.55em),#000 99%,#0000 101%) calc(50% - 2em) 100%/4em 51% repeat-x,
+	  radial-gradient(1.84em at 50% calc(100% + 1.55em),#0000 99%,#000 101%) 50% calc(100% - 1em)/4em calc(51% - 1em) repeat-x;
+	-webkit-mask: var(--mask);
+			mask: var(--mask);
+}
+
+main section:nth-of-type(5) h3{
+	font-weight: 600;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: left;
+	padding-bottom: 1em;
+	font-size: 3em;
+}
+
+main section:nth-of-type(5) p{
+	font-weight: 700;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: left;
+}
+
+main section:nth-of-type(5) a{
+	display: block;
+	margin-left: 40px;
+	width: 45%;
+	text-align: center;
+	background-color: #0076d5;
+	color: #2c2a29;
+	text-decoration: none;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: Titel;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	border: 2px solid #2c2a29;
+}
+
+
+/*DESKTOP VERHOUDINGEN*/
+@media (min-width:790px) {
 	
 	
 	header>button {
