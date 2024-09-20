@@ -147,11 +147,12 @@ header>a:first-of-type {
 }
 
 header>a:first-of-type img {
-	height: 3em;
+	height: 6em;
+	padding-top: 1em;;
 }
 
 header>a:last-of-type img {
-	height: 2em;
+	height: 3em;
 }
 
 
@@ -340,4 +341,15 @@ section:nth-of-type(2) p{
 	header>a:last-of-type {
 		flex-direction: column;
 	}
+
+	header>a:first-of-type {
+		display: grid;
+		grid-template-columns: min-content min-content;
+		grid-gap: .25em;
+		align-items: center;
+		font-weight: bold;
+	}
+	
+
+
 }
