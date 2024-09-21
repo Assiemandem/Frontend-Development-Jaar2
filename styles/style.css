@@ -49,7 +49,7 @@ body {
 h1 {
 	font-family: Titel;
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 4em;
 	text-align: center;
 	color: white;
 	text-shadow: #2c2a29 0 7px 0px;
@@ -61,7 +61,7 @@ h1 {
 h2{
 	font-family: Titel;
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 4em;
 	text-align: center;
 	color: white;
 	text-shadow: #2c2a29 0 7px 0px;
@@ -92,6 +92,17 @@ h4{
 	font-weight: 700;
 	margin-top: 0;
 }
+
+h5{
+	font-family: Tekst;
+	color: #ffffff;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 1.3em;
+	font-weight: 900;
+	margin-top: 0;
+}
+
 p{
 	font-family: Tekst;
 	font-weight: 600;
@@ -135,7 +146,6 @@ header {
 	top: 0;
 	background-color: orange;
 	justify-content: space-between;
-	padding-right: 0.3em;
 	padding-left: 1em;
 	padding-right: 1em;
 }
@@ -165,8 +175,9 @@ header>a:first-of-type {
 }
 
 header>a:first-of-type img {
-	height: 6em;
-	padding-top: 1em;;
+	height: 5em;
+	padding-top: 1em;
+	
 }
 
 header>a:last-of-type img {
@@ -238,13 +249,14 @@ nav a.active {
 
 
 
-section:first-of-type {
+main section:first-of-type {
 	background: url(/images/homepage_achtergrond.png) center;	
-	background-size: 800%;
-	height: auto;
+	background-size: 1000%;
+	min-height: 60em;
 	background-repeat: no-repeat;
 	background: cover;
 	background-position: 60%;
+	margin-top: -3em;
 	padding-top: 2em;
 }
 
@@ -254,7 +266,7 @@ section:first-of-type img {
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
-	padding-bottom: 2em;
+	
 }
 
 /* VANAF HIER DE CLASSES VERANDEREN NAAR PSEUDO SELECTORS*/
@@ -465,19 +477,26 @@ section:nth-of-type(2) h3{
 main section:nth-of-type(3){
 	background-color: #0fa954;
 	padding-bottom: 2em;
-	margin-left: 40px;
 	position: absolute;
-	top: 312em;
-	margin-right: 40px;
-	margin-right: 40px;
-	width: 88%;
-	--mask: /* https://css-generators.com/wavy-shapes/ */
-	  radial-gradient(1.84em at 50% 2.55em,#000 99%,#0000 101%) calc(50% - 2em) 0/4em 51% repeat-x,
-	  radial-gradient(1.84em at 50% -1.55em,#0000 99%,#000 101%) 50% 1em/4em calc(51% - 1em) repeat-x,
-	  radial-gradient(1.84em at 50% calc(100% - 2.55em),#000 99%,#0000 101%) calc(50% - 2em) 100%/4em 51% repeat-x,
-	  radial-gradient(1.84em at 50% calc(100% + 1.55em),#0000 99%,#000 101%) 50% calc(100% - 1em)/4em calc(51% - 1em) repeat-x;
-	-webkit-mask: var(--mask);
-			mask: var(--mask);
+	top: 336em;
+	display: block;
+	margin-left: 40px;
+	width: 85%;
+	border: #2c2a29 solid 2px;
+	box-shadow:  0px 3px 0px -2px #2c2a29, 
+				 0px 6px 0px -4px #2c2a29, 
+				 0px 9px 0px -6px #2c2a29, 
+				 0px 12px 0px -8px #2c2a29, 
+				 0px 15px 0px -10px #2c2a29, 
+				 0px 18px 0px -12px #2c2a29, 
+				 0px 21px 0px -14px #2c2a29, 
+				 0px 24px 0px -16px #2c2a29, 
+				 0px 27px 0px -18px #2c2a29,
+				 0px 30px 0px -20px #2c2a29,
+				 0px 33px 0px -22px #2c2a29,
+				 0px 36px 0px -24px #2c2a29,
+				 0px 39px 0px -26px #2c2a29,
+				 0px 42px 0px -28px #2c2a29;
 }
 
 
@@ -520,7 +539,8 @@ main section:nth-of-type(3) a{
 /*SECTIE 4 OPMAAK*/
 section:nth-of-type(4){
 	background-color: #0076d5;
-	padding-bottom: 10em;
+	padding-bottom: 15em;
+	padding-top: 10em;
 }
 
 section:nth-of-type(4) img{
@@ -566,16 +586,23 @@ main section:nth-of-type(5){
 	margin-left: 40px;
 	margin-right: 40px;
 	position: absolute;
-	top: 393em;
+	top: 424em;
 	padding-bottom: 2em;
-
-	--mask:   /* https://css-generators.com/wavy-shapes/ */
-	  radial-gradient(1.84em at 50% 2.55em,#000 99%,#0000 101%) calc(50% - 2em) 0/4em 51% repeat-x,
-	  radial-gradient(1.84em at 50% -1.55em,#0000 99%,#000 101%) 50% 1em/4em calc(51% - 1em) repeat-x,
-	  radial-gradient(1.84em at 50% calc(100% - 2.55em),#000 99%,#0000 101%) calc(50% - 2em) 100%/4em 51% repeat-x,
-	  radial-gradient(1.84em at 50% calc(100% + 1.55em),#0000 99%,#000 101%) 50% calc(100% - 1em)/4em calc(51% - 1em) repeat-x;
-	-webkit-mask: var(--mask);
-			mask: var(--mask);
+	border: #2c2a29 solid 2px;
+	box-shadow:  0px 3px 0px -2px #2c2a29, 
+				 0px 6px 0px -4px #2c2a29, 
+				 0px 9px 0px -6px #2c2a29, 
+				 0px 12px 0px -8px #2c2a29, 
+				 0px 15px 0px -10px #2c2a29, 
+				 0px 18px 0px -12px #2c2a29, 
+				 0px 21px 0px -14px #2c2a29, 
+				 0px 24px 0px -16px #2c2a29, 
+				 0px 27px 0px -18px #2c2a29,
+				 0px 30px 0px -20px #2c2a29,
+				 0px 33px 0px -22px #2c2a29,
+				 0px 36px 0px -24px #2c2a29,
+				 0px 39px 0px -26px #2c2a29,
+				 0px 42px 0px -28px #2c2a29;
 }
 
 main section:nth-of-type(5) h3{
@@ -612,7 +639,237 @@ main section:nth-of-type(5) a{
 	border: 2px solid #2c2a29;
 }
 
+/*SECTIE 6 OPMAAK*/
+main section:nth-of-type(6){
+	margin-top: 15em;
+	display: flex;
+	flex-direction: column;
+	
+}
 
+main section:nth-of-type(6) h2{
+	width:60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main section:nth-of-type(6) ul{
+	grid-template-columns: 1fr;
+  	align-content: space-evenly;
+	padding-bottom: 2.5em;
+	list-style: none;
+	padding: 0%;
+	
+
+}
+
+main section:nth-of-type(6) ul li{
+	margin-bottom: 2em;
+	background-color: #ffac00;
+	height: 25em;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 20px;
+	border: 5px solid #2c2a29;
+	box-shadow: 0px 8px #2c2a29;
+}
+
+main section:nth-of-type(6) ul li:nth-of-type(2){
+	background-color: #e93ab8;
+}
+
+main section:nth-of-type(6) ul li:nth-of-type(3){
+	background-color: #0076d5;
+}
+main section:nth-of-type(6) ul li img{
+	width: 12%;
+	margin-top: 1em;
+}
+
+main section:nth-of-type(6) ul li h4{
+	font-size: 1.7em;
+	margin-top: 1em;
+	font-weight: 900;
+}
+
+main section:nth-of-type(6) ul li h5{
+	padding-top: 2.6em;
+}
+
+/*SECTIE 7 OPMAAK*/
+
+main section:nth-of-type(7){
+	background-color: #e93ab8;
+	--mask:
+    radial-gradient(1.41em at 50% 1.96em,#000 99%,#0000 101%) calc(50% - 1.6em) 0/3.2em 51% repeat-x,
+    radial-gradient(1.41em at 50% -1.16em,#0000 99%,#000 101%) 50% 0.8em/3.2em calc(51% - 0.8em) repeat-x,
+    radial-gradient(1.41em at 50% calc(100% - 1.96em),#000 99%,#0000 101%) calc(50% - 1.6em) 100%/3.2em 51% repeat-x,
+    radial-gradient(1.41em at 50% calc(100% + 1.16em),#0000 99%,#000 101%) 50% calc(100% - 0.8em)/3.2em calc(51% - 0.8em) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+		  padding-top: 2em;
+		  padding-bottom: 2em;
+}
+
+
+main section:nth-of-type(7) img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+main section:nth-of-type(7) h2{
+	margin-top: 0em;
+}
+
+main section:nth-of-type(7) a{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+	text-align: center;
+	background-color: #ffac00;
+	color: #2c2a29;
+	text-decoration: none;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: Titel;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	border: 2px solid #2c2a29;
+}
+
+
+/*OPMAAK SECTIE 8*/
+
+main section:nth-of-type(8) div{
+	display: flex;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+main section:nth-of-type(8) div h2{
+	font-size: 3em;
+}
+
+main section:nth-of-type(8) ul{
+	display: flex;
+	list-style: none;
+	padding: 0%;
+}
+
+main section:nth-of-type(8) ul li img{
+	width:100%
+}
+
+
+
+
+/*OPMAAK SECTIE 9*/
+
+main section:nth-of-type(9){
+	background-color: #2bb0f1;
+	padding-top: 6em;
+	padding-bottom: 6em;
+}
+
+main section:nth-of-type(9) img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+main section:nth-of-type(9) p{
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+main section:nth-of-type(9) form{
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+main section:nth-of-type(9) form button{
+	text-align: center;
+	background-color: #ffac00;
+	color: #2c2a29;
+	text-decoration: none;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: Titel;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	border: 2px solid #2c2a29;
+
+}
+
+main section:nth-of-type(9) form input{
+	border: 2px solid #2c2a29;
+	text-decoration: none;
+	padding: 1.5em;
+	font-family: Tekst;
+	font-weight: 700;
+	font-size: 1em;
+} 
+
+
+
+/*OPMAAK FOOTER*/
+
+footer{
+	background-color: #2c2a29;
+	padding-bottom: 8em;
+}
+
+footer section{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 88%;
+}
+
+footer img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	padding-top: 3em;
+}
+
+footer section div{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer section div ul{
+	list-style: none;
+}
+
+footer section div ul li{
+	font-family: tekst;
+	font-weight: 700;
+	padding: 0;
+	color: white;
+	
+}
+
+footer section div ul li h3{
+	text-align: left;
+	color: white;
+	margin-left: 0;
+}
 /*DESKTOP VERHOUDINGEN*/
 @media (min-width:790px) {
 	
