@@ -464,11 +464,13 @@ section:nth-of-type(2) h3{
 /*SECTIE 3 OPMAAK*/
 main section:nth-of-type(3){
 	background-color: #0fa954;
-	margin-left: 40px;
-	margin-right: 40px;
 	padding-bottom: 2em;
+	margin-left: 40px;
 	position: absolute;
 	top: 312em;
+	margin-right: 40px;
+	margin-right: 40px;
+	width: 88%;
 	--mask: /* https://css-generators.com/wavy-shapes/ */
 	  radial-gradient(1.84em at 50% 2.55em,#000 99%,#0000 101%) calc(50% - 2em) 0/4em 51% repeat-x,
 	  radial-gradient(1.84em at 50% -1.55em,#0000 99%,#000 101%) 50% 1em/4em calc(51% - 1em) repeat-x,
@@ -476,21 +478,6 @@ main section:nth-of-type(3){
 	  radial-gradient(1.84em at 50% calc(100% + 1.55em),#0000 99%,#000 101%) 50% calc(100% - 1em)/4em calc(51% - 1em) repeat-x;
 	-webkit-mask: var(--mask);
 			mask: var(--mask);
-
-	box-shadow:  0px 3px 0px -2px #2c2a29, 
-	0px 6px 0px -4px #2c2a29, 
-	0px 9px 0px -6px #2c2a29, 
-	0px 12px 0px -8px #2c2a29, 
-	0px 15px 0px -10px #2c2a29, 
-	0px 18px 0px -12px #2c2a29, 
-	0px 21px 0px -14px #2c2a29, 
-	0px 24px 0px -16px #2c2a29, 
-	0px 27px 0px -18px #2c2a29,
-	0px 30px 0px -20px #2c2a29,
-	0px 33px 0px -22px #2c2a29,
-	0px 36px 0px -24px #2c2a29,
-	0px 39px 0px -26px #2c2a29,
-	0px 42px 0px -28px #2c2a29;
 }
 
 
