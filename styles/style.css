@@ -131,6 +131,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	position: sticky;
+	z-index: 999;
 	top: 0;
 	background-color: orange;
 	justify-content: space-between;
