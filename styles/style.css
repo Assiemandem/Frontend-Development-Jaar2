@@ -29,12 +29,12 @@
 
 @font-face {
 	font-family: Titel;
-	src: url("/fonts/FiraSansExtraCondensed-Black.ttf") format("truetype");
+	src: url("../../fonts/FiraSansExtraCondensed-Black.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: Tekst;
-	src: url("/fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+	src: url("../../fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
 }
 
 
@@ -335,7 +335,7 @@ section:nth-of-type(2) a{
 
 /*----------------------------------SECTIE 1-----------------------*/
 main section:first-of-type {
-	background: url(./images/homepage_achtergrond.png) center;	
+	background: url(../../images/homepage_achtergrond.png) center;	
 	background-size: 1000%;
 	height: 60em;
 	background-repeat: no-repeat;
