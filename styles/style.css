@@ -956,7 +956,7 @@ footer section div ul li h3{
 	}
 
 	.test{
-		content: url("/images/volledig_logo.svg");
+		content: url("../images/volledig_logo.svg");
 		position: relative;
 		top: -0.5em;
 	}
