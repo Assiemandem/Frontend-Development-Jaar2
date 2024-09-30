@@ -11,7 +11,7 @@
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
-<body class="productpagina">
+<body class="detailspagina">
     <header>
 			<a>
 				<img class="test" src="images/logo_slim.svg" alt="Top of the Mornin' Logo klein">
@@ -40,14 +40,31 @@
     <main>
         <section>
             <article>
-				<img src="images/koffie_cups.png" alt="image of the cupbag with 2 cups in front">
-				<img src="images/nocups.png" alt="image of the cupbag">
-				<img src="images/singlecup.png" alt="image of 1 cups">
+					<div class="card">
+						<div class="voorkant">
+							<img src="images/koffie_cups.png" alt="image of the cupbag with 2 cups in front">
+						</div>
+						<div class="achterkant">
+							<img src="images/singlecup.png" alt="image of 1 cups">
+						</div>
+					</div>
 			</article>
 			<article>
 				<div>
-					<h1>midnight oil cups - 2o count</h1>
-					<p>27.95</p>
+					<div class="banaan">
+						<h1>midnight oil cups - 20 count</h1>
+						<div>
+							<p>Dark Roast</p>
+								<div>
+								<img src="images/koffieboon.svg" alt="">
+								<img src="images/koffieboon.svg" alt="">
+								<img src="images/koffieboon.svg" alt="">
+								<img src="images/koffieboon.svg" alt="">
+								<img src="images/koffieboon.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<p>€27.95</p>
 				
 					<img src="images/ster.svg" alt="">
 					<img src="images/ster.svg" alt="">
@@ -56,23 +73,15 @@
 					<img src="images/halvester.svg" alt="">
 
 					<p>Tasting Notes</p>
-					<div>
-						<p>Chocolate</p>
+					<div class="smaak">
 						<img src="images/chocolate.svg" alt="">
+						<p>Chocolate</p>
 						<img src="images/Toffee.svg" alt="">
 						<p>Toffee</p>	
 					</div>
 				</div>
 				
-				<div>
-					<p>Dark Roast</p>
-					<img src="images/vraagteken.svg" alt="click here for explanation">
-					<img src="images/koffieboon.svg" alt="">
-					<img src="images/koffieboon.svg" alt="">
-					<img src="images/koffieboon.svg" alt="">
-					<img src="images/koffieboon.svg" alt="">
-					<img src="images/koffieboon.svg" alt="">
-				</div>
+				
 			
 				<div>
 					<h2>Quantity</h2>
@@ -84,41 +93,53 @@
 					</select>
 					<div>
 						<h3>Sub total</h3>
-						<p>27.95</p>
+						<p>€27.95</p>
 					</div>
 					<button>Add to Cart</button>
 				</div>
 
 				<h3>So dark you'll need a flashlight</h3>
-				<p>So dark you'll need a flashlight. Our OG coffee is a dream, and now available in cups for your keurig 1.0 or 2.0 machine! Enjoy chocolatey nuttiness flavors with beans roasted to the edge of awesome. Go deep, go rich and commit with the darkest coffee you can put in your cup. </p>
+				<p>Our OG coffee is a dream, and now available in cups for your keurig 1.0 or 2.0 machine! Enjoy chocolatey nuttiness flavors with beans roasted to the edge of awesome. Go deep, go rich and commit with the darkest coffee you can put in your cup. </p>
 				<p>Responsibly sourced. Just good.</p>
 				<p>After use, please remove the lid and recycle! Compatible with Keurig 1.0 & 2.0</p>
 			</article>
         </section>
 		
 		<section>	
-			<div>
-				<img src="locatie.svg" alt="">
-				<h3>Bean origin</h3>
-				<p>Central & South America</p>
-			</div>
-			<div>
-				<img src="kopje.svg" alt="">
-				<h3>Taste this</h3>
-				<p>Chocolate, Toffee, Nuttiness</p>
-			</div>
-			<div>
-				<img src="kan.svg" alt="">
-				<h3>How to Brew</h3>
-				<p>Follow your machine instructions</p>
-			</div>
-        <section>
+			<ul>
+				<li>
+					<img src="images/locatie.svg" alt="">
+					<h3>Bean origin</h3>
+					<p>Central & South America</p>
+				</li>
+				<li>
+					<img src="images/kopje.svg" alt="">
+					<h3>Taste this</h3>
+					<p>Chocolate, Toffee, Nuttiness</p>
+				</li>
+				<li>
+					<img src="images/kan.svg" alt="">
+					<h3>How to Brew</h3>
+					<p>Follow your machine instructions</p>
+				</li>
+			</ul>
+        </section>
 
 		<section>
 			<div>
 				<div>
 					<h3>Customer reviews</h3>
-					<select>
+					<div>
+						<img src="images/ster.svg" alt="">
+						<img src="images/ster.svg" alt="">
+						<img src="images/ster.svg" alt="">
+						<img src="images/ster.svg" alt="">
+						<img src="images/halvester.svg" alt="">
+					</div>
+					<p>Write a review</p>
+				</div>
+
+				<select>
 						<option>Most recent</option>
 						<option>Most helpful</option>
 						<option>Lowest rating</option>
@@ -126,16 +147,7 @@
 						<option>Only Pictures</option>
 						<option>Pictures first</option>
 						<option>Video First</option>
-					</select>
-				</div>
-				<div>
-					<img src="images/ster.svg" alt="">
-					<img src="images/ster.svg" alt="">
-					<img src="images/ster.svg" alt="">
-					<img src="images/ster.svg" alt="">
-					<img src="images/halvester.svg" alt="">
-				</div>
-				<p>Write a review</p>
+				</select>
 			</div>
 			<article>
 				<p>09/27/2024</p>
@@ -164,7 +176,7 @@
 			</article>
 		</section>
         
-		<section></section>
+		<section>
 			<img src="images/lopend_zonnetje.gif" alt="happy sun walking">
 			<h2>Stay up to date</h2>
 			<p>Get the latest offers, flavors and updates and share some bean love!</p>
