@@ -45,7 +45,6 @@ body {
 
 
 /*KOPJES EN PARAGRAAF OPMAAK*/
-
 .homepagina h1 {
 	font-family: Titel;
 	text-transform: uppercase;
@@ -110,15 +109,6 @@ p{
 }
 
 
-.homepagina section p{
-	font-size: 1em;
-	text-align: center;
-	margin-left: 5em;
-	margin-right: 5em;
-	margin-top: -2em;
-	font-weight: 800;
-	color:#2c2a29;
-}
 
 
 section ul li p{
@@ -252,7 +242,7 @@ nav a.active {
 
 
 /*----------------------------KNOPPEN---------------------------------*/
-.homepagina main section:first-of-type a:first-of-type{
+main section:first-of-type a:first-of-type{
 	display: block;
 	margin: 0 auto;
 	width: 38%;
@@ -268,6 +258,7 @@ nav a.active {
 	font-size: 1.7em;
 	text-transform: uppercase;
 	border: 2px solid #2c2a29;
+	transition: ease-in-out 0.2s;
 	box-shadow:  0px 3px 0px -2px #2c2a29, 
 				 0px 6px 0px -4px #2c2a29, 
 				 0px 9px 0px -6px #2c2a29, 
@@ -285,8 +276,16 @@ nav a.active {
 	;
 }
 
-.homepagina main section:nth-of-type(2) > a:nth-of-type(1){            /* > PIJLTJE DUIDT OP DIRECT CHILD*/
+main section:first-of-type a:first-of-type:hover{
+	background-color: pink;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	width: 45%;
+}
+
+main section:nth-of-type(2) > a:nth-of-type(1){            /* > PIJLTJE DUIDT OP DIRECT CHILD*/
 	background-color: #e93ab8;
+	transition: ease-in-out 0.2s;
 	box-shadow:  0px 3px 0px -2px #2c2a29, 
 				 0px 6px 0px -4px #2c2a29, 
 				 0px 9px 0px -6px #2c2a29, 
@@ -304,11 +303,22 @@ nav a.active {
 	;
 }
 
-.homepagina main section:nth-of-type(2) ul li a{
-	background-color: #ffac00;
+main section:nth-of-type(2) > a:nth-of-type(1):hover{
+	background-color: pink;
+	width: 80%;
 }
 
-.homepagina section a:last-of-type{
+main section:nth-of-type(2) ul li a{
+	background-color: #ffac00;
+	transition: ease-in-out 0.2s;
+}
+
+main section:nth-of-type(2) ul li a:last-of-type:hover{
+	background-color: #ffcb62;
+	width: 80%;
+}
+
+section a:last-of-type{
 	display: block;
 	margin: 0 auto;
 	width: 70%;
@@ -325,7 +335,7 @@ nav a.active {
 	border: 2px solid #2c2a29;
 }
 
-.homepagina section:nth-of-type(2) a{
+section:nth-of-type(2) a{
 	background-color: #ffac00;
 	
 }
@@ -346,7 +356,7 @@ nav a.active {
 	padding-top: 6em;
 }
 
-.homepagina section:first-of-type img {
+section:first-of-type > img {
 	width: 50%;
 	display: block;
   	margin-left: auto;
@@ -356,10 +366,16 @@ nav a.active {
 
 
 
-
+main section:first-of-type > p{
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 700;
+}
 
 /*-------------------------------WAARDES---------------------------------*/
-.homepagina main ul:nth-child(2){
+main ul:nth-child(2){
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -368,15 +384,14 @@ nav a.active {
 	padding-bottom: 8em;
 
 }
-  	
-.homepagina main ul:nth-child(2) li{
+main ul:nth-child(2) li{
 	display: flex;
 	flex-direction: column;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
-.homepagina main ul:nth-child(2) p{
+main ul:nth-child(2) p{
 	text-align: center;
 }
 
@@ -391,22 +406,29 @@ nav a.active {
 padding-bottom: 10em;
 }
 
+main section:nth-of-type(2) > p{
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 700;
+}
 
 /*shop list*/
-.homepagina main section ul{
+main section ul{
 	display: grid;
   	align-content: center;
 	padding: 0;
 	list-style: none;
 }
 
-.homepagina main section ul li{
+main section ul li{
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 3em;
 }
 
-.homepagina main section ul li a:first-of-type{
+main section ul li a:first-of-type{
 	display:flex;
 	justify-content: center;
 	position: relative;
@@ -421,26 +443,25 @@ padding-bottom: 10em;
 }
 
 
-.homepagina main section:nth-of-type(2) ul li a > img{
+main section:nth-of-type(2) ul li a > img{
 	width: 190%;
 }
 
 
-/*OPMAAK BONEN*/
-.homepagina main section ul li a div{
+main section ul li a div{
 	position: absolute;
 	display: flex;
 	left: 12px;
 	top: 12px;
 }
 
-.homepagina main section ul li a div img{
+main section ul li a div img{
 	width: 10%;
 }
 
 
 /*GELE LABELS OP SHOP ITEMS*/
-.homepagina main section:nth-of-type(2) ul li h4{
+main section:nth-of-type(2) ul li h4{
 	position: absolute;
 	background-color: rgb(255, 238, 5);
 	padding-left: 15px;
@@ -456,7 +477,7 @@ padding-bottom: 10em;
 
 
 /*SELECT BLOK*/
-.homepagina select{
+ul li select{
 	display: block;
 	margin: 0 auto;
 	width: 70%;
@@ -470,7 +491,7 @@ padding-bottom: 10em;
 }
 
 /*SPECIFIEKE KOPJES OPMAAK*/
-.homepagina section:nth-of-type(2) h3{
+section:nth-of-type(2) h3{
 	font-weight: 600;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -478,7 +499,7 @@ padding-bottom: 10em;
 	
 }
 
-.homepagina section:nth-of-type(2) h5{
+section:nth-of-type(2) h5{
 	font-size: 1.5em;
 	color: #2c2a29;
 }
@@ -529,7 +550,7 @@ padding-bottom: 10em;
 	text-align: left;
 }
 
-.homepagina main section:nth-of-type(3) a{
+main section:nth-of-type(3) a{
 	display: block;
 	margin-left: 40px;
 	width: 45%;
@@ -545,8 +566,13 @@ padding-bottom: 10em;
 	font-size: 1.3em;
 	text-transform: uppercase;
 	border: 2px solid #2c2a29;
+	transition: ease-in-out 0.2s;
 }
 
+main section:nth-of-type(3) a:hover{
+	background-color: #ffcb62;
+	width: 50%;
+}
 
 
 
@@ -569,8 +595,12 @@ section:nth-of-type(4) h2{
 	line-height: 0.75em;
 }
 
-section:nth-of-type(4) p{
+section:nth-of-type(4) > p{
 	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 80%;
 }
 
 section:nth-of-type(4) a{
@@ -589,10 +619,17 @@ section:nth-of-type(4) a{
 	font-size: 1.7em;
 	text-transform: uppercase;
 	border: 2px solid #2c2a29;
+	transition: ease-in-out 0.2s;
 }
 
+section:nth-of-type(4) a:hover{
+	background-color: #ffcb62;
+	width: 80%;
+}
 
-
+section:nth-of-type(4) a:focus{
+	outline-color: white;
+}
 
 
 /*------------------------------------SECTIE 6 OPMAAK----------------------------------------*/
@@ -653,10 +690,17 @@ main section:nth-of-type(5) a{
 	font-size: 1.3em;
 	text-transform: uppercase;
 	border: 2px solid #2c2a29;
+	transition: ease-in-out 0.2s;
 }
 
+main section:nth-of-type(5) a:hover{
+	background-color: #36bcee;
+	width: 50%;
+}
 
-
+main section:nth-of-type(5) a:focus{
+	outline-color: white;	
+}
 
 
 /*------------------------------------SECTIE 7 OPMAAK----------------------------------------*/
@@ -767,6 +811,24 @@ main section:nth-of-type(7) a{
 	font-size: 1.7em;
 	text-transform: uppercase;
 	border: 2px solid #2c2a29;
+	transition: ease-in-out 0.2s;
+}
+
+main section:nth-of-type(7) a:hover{
+	background-color: #ffcb62 ;
+	width: 50%;
+}
+
+main section:nth-of-type(7) a:focus{
+	outline-color: white;
+}
+
+main section:nth-of-type(7) p{
+	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 80%;
 }
 
 
@@ -783,7 +845,7 @@ main section:nth-of-type(8) div h2{
 	font-size: 3.5vh;
 }
 
-main section:nth-of-type(8) ul{
+section:nth-of-type(8) ul{
 	display: flex;
 	list-style: none;
 	padding: 0%;
@@ -800,7 +862,7 @@ main section:nth-of-type(8) ul li img{
 
 main section:last-of-type{
 	background-color: #2bb0f1;
-	padding-top: 6em;
+	padding-top: 1em;
 	padding-bottom: 6em;
 }
 
@@ -814,6 +876,22 @@ main section:last-of-type img{
 main section:last-of-type p{
 	font-size: 1em;
 	font-weight: 700;
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main section:last-of-type h2{
+	font-family: Titel;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-align: center;
+	color: white;
+	text-shadow: #2c2a29 0 7px 0px;
+	-webkit-text-stroke: 2px #2c2a29;
+	margin-left: .5em;
+	margin-right: .5em;
 }
 
 main section:last-of-type form{
@@ -837,7 +915,16 @@ main section:last-of-type form button{
 	font-size: 1.7em;
 	text-transform: uppercase;
 	border: 2px solid #2c2a29;
+	transition: ease-in-out 0.2s;
 
+}
+
+main section:last-of-type form button:hover{
+	background-color: #ffcb62;
+}
+
+main section:last-of-type form button:focus{
+	outline-color: white;
 }
 
 main section:last-of-type form input{
@@ -849,7 +936,10 @@ main section:last-of-type form input{
 	font-size: 1em;
 } 
 
-
+main section:last-of-type form input:focus{
+	outline-color: #ffac00;
+	outline-style: solid;
+}
 
 /*------------------------------------FOOTER OPMAAK----------------------------------------*/
 
@@ -870,7 +960,7 @@ footer img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+	max-width: 200px;
 	padding-top: 3em;
 }
 
@@ -903,6 +993,22 @@ footer section div ul li h3{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------------DETAILS PAGINA----------------------------------------*/
 /*---------------------------------------SECTIE 1-------------------------------------------*/
 
@@ -916,38 +1022,40 @@ footer section div ul li h3{
 	padding-top: 2em;
 }
 
-.card{
+.detailspagina main section article:first-of-type > div{
 	width: 100%;
 	height: 100%;
 	transform-style: preserve-3d;
 	transition: all 0.5s ease;
 }
 
-.card:hover{
+
+.detailspagina main section:first-of-type article:first-of-type > div:hover{
 	transform: rotateY(180deg);
 }
 
-.voorkant{
+.detailspagina main section article:first-of-type > div >div:first-of-type{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
 }
 
-.achterkant{
-	
+.detailspagina main section article:first-of-type > div >div:last-of-type(){
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
 	transform: rotateY(180deg);
+	
 }
 
-.voorkant img{
+.detailspagina main section article:first-of-type > div >div:first-of-type img{
 	width: 100%;
 }
 
-.achterkant img{
+.detailspagina main section article:first-of-type > div >div:last-of-type img{
 	width: 100%;
+	
 }
 
 
@@ -961,22 +1069,22 @@ footer section div ul li h3{
 	text-transform: uppercase;
 	font-size: 1.7em;
 	width: 60%;
+	text-align: left;
 }
 
 .detailspagina main section article:first-of-type{
 	margin-bottom: -2em;
 }
 
-.banaan div{
+.detailspagina main section article:nth-of-type(2) > div:first-of-type > div{
 	text-align: right;
 }
 
-.banaan{
+.detailspagina main section article:nth-of-type(2) > div:first-of-type > div{
 	display: flex;
-	justify-content: space-between;
 }
 
-.banaan p{
+.detailspagina main section article:nth-of-type(2) > div:first-of-type > div:first-of-type p{
 	font-family: Titel;
 	text-transform: uppercase;
 	font-size: 1.2em;
@@ -987,16 +1095,19 @@ footer section div ul li h3{
 	
 
 }
-.smaak{
-	display: flex;
+
+.detailspagina main section article:nth-of-type(2) div >div:last-of-type{
+	font-family: Tekst;
 }
 
-.detailspagina main section article:nth-of-type(2) > div > p:first-of-type{
-	font-size: 1.5em;
-	margin-top: -1em;
-	font-weight: 700;
+.detailspagina main section article:nth-of-type(2) div > div p{
+	font-weight: 800;
 }
 
+.detailspagina main section article:nth-of-type(2) > div:nth-of-type(1) > p:first-of-type{
+	font-size: 1.7em;
+	margin-top: 0;
+}
 
 /*HOEVEELHEID*/
 
@@ -1061,6 +1172,7 @@ footer section div ul li h3{
 	font-size: 1.7em;
 	text-transform: uppercase;
 	border: 2px solid #2c2a29;
+	transition: ease-in-out 0.3s;
 	box-shadow:  0px 3px 0px -2px #2c2a29, 
 				 0px 6px 0px -4px #2c2a29, 
 				 0px 9px 0px -6px #2c2a29, 
@@ -1080,10 +1192,28 @@ footer section div ul li h3{
 
 .detailspagina main section article:nth-of-type(2) > div:nth-of-type(2) button:hover{
 	background-color: pink;
-	transition: 250ms;
 	width: 100%;
 }
 
+.detailspagina main section article:nth-of-type(2) > div:nth-of-type(3){
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.5em;
+	border-top: 1px solid #beb5b0;
+} 
+
+.detailspagina main section article:nth-of-type(2) > div:nth-of-type(3) > p{
+	font-weight: 700;
+}
+
+.detailspagina main section article:nth-of-type(2) > div:nth-of-type(4) > p{
+	font-weight: 700;
+}
+
+.detailspagina main section article:nth-of-type(2) > div:nth-of-type(4){
+	display: flex;
+	justify-content: space-between;
+}
 /*------------------------------------SECTIE 2----------------------------------------*/
 
 .detailspagina main section:nth-of-type(2){
@@ -1119,6 +1249,7 @@ footer section div ul li h3{
 
 .detailspagina main section:nth-of-type(2) ul li{
 	text-align: center;
+	margin-bottom: 0;
 }
 
 .detailspagina main section:nth-of-type(2) ul li p{
@@ -1129,11 +1260,14 @@ footer section div ul li h3{
 	font-size: 2em;
 	margin-bottom: 0;
 	margin-top: 0;
+	text-align: center;
 }
 
 
 .detailspagina main section:nth-of-type(2) ul li img{
-	height: 6em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 }
 
 
@@ -1155,9 +1289,6 @@ footer section div ul li h3{
 	padding-top: 1em;
 } 
 
-.detailspagina main section:nth-of-type(3) > div:first-of-type div div img{
-	height: 1.5em;
-}
 
 .detailspagina main section:nth-of-type(3) > div:first-of-type h3{
 	font-size: 2em;
@@ -1181,6 +1312,9 @@ footer section div ul li h3{
 	border: solid 2px #2c2a29;
 }
 
+.detailspagina main section:nth-of-type(3) > div:first-of-type select:focus{
+	outline-color: #ffffff;
+}
 
 /*REVIEWS*/
 .detailspagina main section:nth-of-type(3){
@@ -1210,6 +1344,15 @@ footer section div ul li h3{
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	height: 1.3em
+}
+
+
+:focus{
+	outline: 5px dashed blue;
+}
+
+input:focus{
+	outline-color: #ffac00;
 }
 
 
