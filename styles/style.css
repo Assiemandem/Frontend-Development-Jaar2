@@ -305,7 +305,7 @@ main section:nth-of-type(2) > a:nth-of-type(1){            /* > PIJLTJE DUIDT OP
 
 main section:nth-of-type(2) > a:nth-of-type(1):hover{
 	background-color: pink;
-	width: 80%;
+	width: 20em;
 }
 
 main section:nth-of-type(2) ul li a{
@@ -348,7 +348,6 @@ section:nth-of-type(2) a{
 .homepagina main section:first-of-type {
 	background: url(../images/achtergrond2.png) center;	
 	background-size: 150%;
-	height: 70em;
 	background-repeat: no-repeat;
 	background: cover;
 	background-position: 60%;
@@ -513,6 +512,7 @@ section:nth-of-type(2) h5{
 	background-color: #0fa954;
 	margin-left: 40px;
 	margin-right: 40px;
+	max-width: 790px;
 	position: relative;
 	top: 0em;
 	margin-bottom: -10em;
@@ -637,6 +637,7 @@ main section:nth-of-type(5){
 	background-color: #e93ab8;
 	margin-left: 40px;
 	margin-right: 40px;
+	max-width: 790px;
 	position: relative;
 	top: -12em;
 	margin-bottom: -20em;
@@ -1410,9 +1411,123 @@ input:focus{
 		background-color: #ffa500;
 	}
 
-	.test{
-		content: url("../images/volledig_logo.svg");
+	main ul:nth-child(2){
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		max-width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 4em;
+		padding-top: 4em;
+	}
+
+	main section:nth-of-type(2) > a{
+		width: 20%;
+	}
+
+
+	main section ul{
+		grid-template-columns: 1fr 1fr 1fr;
+		max-width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	main section:nth-of-type(2) ul li h3{
+		font-size: 1.5em;
+	}
+
+	
+
+	.homepagina main section:nth-of-type(3){
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.homepagina main section:nth-of-type(5){
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	main section:nth-of-type(6) ul{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	main section:nth-of-type(6) ul li:last-of-type h5{
+		padding-top: 0;
+	}
+
+	section:nth-of-type(4){
+		display: flex;
+		justify-content: center;
+		padding-bottom: 2	0em;
+	}
+
+	section:nth-of-type(4) img{
+		max-width: 30%;
+	}
+
+	section:nth-of-type(4) div{
 		position: relative;
-		top: -0.5em;
+		top: 200px;
+		order: -1;
+	}
+
+	main section:nth-of-type(7){
+		display: flex;
+		justify-content: center;
+		
+		
+		
+	}
+
+	main section:nth-of-type(7) div{
+		width: 30%;
+		order: -1;
+		position: relative;
+		margin-top: 1em;
+		
+	}
+
+	main section:nth-of-type(7) div h2{
+		text-align: left;
+		margin-left: 0;
+		margin-bottom: 0;
+
+	}
+
+
+	main section:nth-of-type(7) div p{
+		text-align: left;
+		margin-left: 0;
+	}
+
+	main section:nth-of-type(7) div a{
+		margin-left: 0;
+	}
+
+	main section:nth-of-type(7) img{
+		width: 35%;
+		padding: 2em;
+		margin: 0;
+	}
+
+	main section:nth-of-type(1) {
+		display: flex;
+		justify-content: center;
+
+
+	}
+
+	main section:nth-of-type(1) img{
+		display: relative;
+		height: 30%;
+		width: 20%;
+		margin: 0;
+		margin-top: 7em;
+	}
+
+	main section:nth-of-type(1) div{
+		width: 30%;
 	}
 }
+
