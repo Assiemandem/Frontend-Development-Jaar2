@@ -1270,6 +1270,11 @@ footer section div ul li h3{
 	
 }
 
+.detailspagina main section article:nth-of-type(2) > div:nth-of-type(2) div > p{
+	width: 3.2em;
+	margin-right: 0;
+}
+
 .detailspagina h3{
 	font-family: Titel;
 	text-transform: uppercase;
