@@ -1193,6 +1193,7 @@ footer section div ul li h3{
 	text-transform: uppercase;
 	font-size: 1.2em;
 	margin-bottom: 0.2em;
+	margin-left: 2.3em;
 }
 .detailspagina main section article:nth-of-type(2) div div img{
 	width: 8%;
@@ -1213,6 +1214,21 @@ footer section div ul li h3{
 	margin-top: 0;
 }
 
+
+.detailspagina main section article:nth-of-type(2)  div > p{
+	text-align: left;
+	margin-left: 0;
+}
+
+.detailspagina main section article:nth-of-type(2)  div div div p{
+	text-align: right;
+	margin-right: 0;
+}
+
+
+.detailspagina main section article:nth-of-type(2) div > img{
+	width: 1.5em;
+}
 
 
 /*HOEVEELHEID*/
@@ -1692,6 +1708,10 @@ input:focus{
 
 	.detailspagina main section article:first-of-type div{
 		width: 100%;
+	}
+
+	.detailspagina main section article:nth-of-type(2) > div:first-of-type > div:first-of-type p{
+		margin-left: 0;
 	}
 
 	.detailspagina main section:first-of-type{
