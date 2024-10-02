@@ -25,3 +25,14 @@ function sluitMenu() {
   deNav.classList.remove("toonMenu");
 }
 
+
+//PLAATJE FLIPPER               BRON: https://www.youtube.com/watch?v=OV8MVmtgmoY//
+var plaatjeklik = document.getElementById("Dekaart");
+plaatjeklik.onclick = Flipplaatje;
+
+function Flipplaatje() {
+  var Omdraaien = document.getElementById("Dekaart");
+  Omdraaien.classList.toggle("flipper");
+
+
+}

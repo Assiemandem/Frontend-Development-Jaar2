@@ -1126,15 +1126,14 @@ footer section div ul li h3{
 	padding-top: 2em;
 }
 
-.detailspagina main section article:first-of-type > div{
+#Dekaart{
 	width: 100%;
 	height: 100%;
 	transform-style: preserve-3d;
 	transition: all 0.5s ease;
 }
 
-
-.detailspagina main section:first-of-type article:first-of-type > div:hover{
+.flipper{
 	transform: rotateY(180deg);
 }
 
@@ -1785,7 +1784,7 @@ input:focus{
 		height: auto;
 	}
 
-	.detailspagina main section:first-of-type article:first-of-type > div{
+	#Dekaart{
 		position: sticky;
 		top: 120px;
 		height: auto;
