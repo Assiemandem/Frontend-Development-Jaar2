@@ -487,6 +487,7 @@ main section ul li a:first-of-type{
 	margin-left: auto;
 	margin-right: auto;
 	transition: .2s ease-in-out;
+	max-height: 472px;
 }
 
 main section ul li a:first-of-type:hover{

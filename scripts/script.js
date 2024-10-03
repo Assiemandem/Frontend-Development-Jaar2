@@ -13,8 +13,6 @@ function openMenu() {
 }
 
 
-
-
  //SLUITEN//
 var sluitButton = document.querySelector("nav button");
 
