@@ -489,6 +489,9 @@ main section ul li a:first-of-type{
 	transition: .2s ease-in-out;
 }
 
+main section ul li a:first-of-type:hover{
+	scale: 1.1;
+}
 
 main section ul li a:last-of-type:hover{
 	width: 80%;
