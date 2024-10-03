@@ -277,5 +277,6 @@ op bepaalde punten ben ik dus al vooruit gegaan op de echte website, maar op and
   1. [Wavey shape generator](https://css-generators.com/wavy-shapes/)
   2. [CSS Flip card effect](https://www.youtube.com/watch?v=OV8MVmtgmoY/)
   3. [Codepen hamburger menu](https://codepen.io/shooft/pen/VwJXNEg)
+  4. [Text stroke](https://css-tricks.com/adding-stroke-to-web-text/)
 
 </details>
