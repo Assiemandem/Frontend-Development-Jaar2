@@ -852,7 +852,7 @@ main section:nth-of-type(6) ul li h5{
 
 main section:nth-of-type(7){           
 	background-color: #e93ab8;		 
-	--mask:			/* https://css-generators.com/wavy-shapes/ */
+	--mask:			/*BRON https://css-generators.com/wavy-shapes/ */
     radial-gradient(1.41em at 50% 1.96em,#000 99%,#0000 101%) calc(50% - 1.6em) 0/3.2em 51% repeat-x,
     radial-gradient(1.41em at 50% -1.16em,#0000 99%,#000 101%) 50% 0.8em/3.2em calc(51% - 0.8em) repeat-x,
     radial-gradient(1.41em at 50% calc(100% - 1.96em),#000 99%,#0000 101%) calc(50% - 1.6em) 100%/3.2em 51% repeat-x,
