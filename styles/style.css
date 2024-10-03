@@ -1530,6 +1530,14 @@ input:focus-visible{
 		background: none;
 	}
 
+	header nav a{
+		transition: 0.2s ease-in-out;
+	}
+	
+	header nav a:hover {
+		transform: scale(1.2);
+	}
+
 	nav ul li:first-of-type{
 		border-top: none;	
 	}
