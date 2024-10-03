@@ -1134,6 +1134,12 @@ footer section div ul li h3{
 
 .detailspagina main section article:nth-of-type(1) > div{
 	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+
+.detailspagina main section article:nth-of-type(1) > div:hover{
+	scale: 1.02;
 }
 
 #Dekaart{
