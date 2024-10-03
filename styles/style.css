@@ -265,7 +265,7 @@ nav a.active {
 main section:first-of-type a:first-of-type{
 	display: block;
 	margin: 0 auto;
-	width: 38%;
+	width: 40%;
 	text-align: center;
 	background-color: #e93ab8;
 	color: #2c2a29;
@@ -325,7 +325,7 @@ main section:nth-of-type(2) > a{            /* > PIJLTJE DUIDT OP DIRECT CHILD*/
 
 main section:nth-of-type(2) > a:nth-of-type(1):hover{
 	background-color: #ffcb62;
-	width: 25%;
+	width: 45%;
 }
 
 main section:nth-of-type(2) ul li a{
@@ -439,8 +439,9 @@ main ul:nth-child(2) h3{
 
 }
 
-
-
+main section:nth-of-type(2) > a{
+	width: 40%;
+}
 
 
 /*-------------------------------------------------------------------------------------------*/
@@ -1124,6 +1125,11 @@ footer section div ul li h3{
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2em;
+	
+}
+
+.detailspagina main section article:nth-of-type(1) > div{
+	cursor: pointer;
 }
 
 #Dekaart{
@@ -1574,7 +1580,7 @@ input:focus-visible{
 	}
 
 	main section:nth-of-type(2) > a{
-		width: 20%;
+		width: 40%;
 	}
 
 
